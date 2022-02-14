@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  gitApiKey: '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'
+  apiUrl: "https://api.github.com/users/Juliet-Ol",
+  gitApiKey: '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'
 };
 
 /*
