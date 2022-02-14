@@ -9,6 +9,8 @@ import { AppComponent } from './app.component';
 import { GitSearchComponent } from './git-search/git-search.component';
 import { FormComponent } from './form/form.component';
 import { ProfileComponent } from './profile/profile.component';
+import { RepoGitComponent } from './repo-git/repo-git.component';
+import { GitService } from './git-services/git.service';
 
 
 @NgModule({
@@ -16,7 +18,8 @@ import { ProfileComponent } from './profile/profile.component';
     AppComponent,
     GitSearchComponent,
     FormComponent,
-    ProfileComponent
+    ProfileComponent,
+    RepoGitComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,7 @@ import { ProfileComponent } from './profile/profile.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [GitService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
