@@ -12,6 +12,6 @@ export class GitService {
   }
 
   getGitHubRepo() {
-    return this.http.get(``)
+    return this.http.get(`https://api.github.com/users/username/repos?api_key=${environment.gitApiKey}`)
   }
 }
