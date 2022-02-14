@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GitSearch } from '../git-search/git-search'
+// import { GitSearch } from '../git-search/git-search'
 import { GitService } from '../git-services/git.service';
 
 @Component({
@@ -10,10 +10,10 @@ import { GitService } from '../git-services/git.service';
 })
 export class GitSearchComponent implements OnInit {
 
-  gitsearch!: GitSearch[];
+  // gitsearch!: GitSearch[];
 
   constructor(gitService:GitService) { 
-    this.gitsearch = gitService.getGitHubRepo
+    
   }
 
   ngOnInit(): void {
