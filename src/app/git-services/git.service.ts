@@ -14,6 +14,7 @@ export class GitService {
   repositories:any[] = [];
   username:string;
   repos:any = new Git();
+  apiToken: any;
   url = "http://api.github.com/users/user"
   getApiUrl: any;
   
@@ -32,11 +33,16 @@ export class GitService {
       apiUrl:any
       gitApiKey:any
     }
+    
     let promise = new Promise<void>((resolve, reject) => {
-      this.http.get<ApiResponse>(environment.apiUrl).toPromise().then(response=>{
-        this.getApiUrl.apiUrl = response?.apiUrl
-        this['getGit'].git = response?.git
-        this['getUsername'].username = response?.username
+      this.http.get<ApiResponse>(environment.apiUrl+this.username+this.repos).toPromise().then(response=>{
+        this.repos = response?.apiUrl
+        this.repos = response?.username
+        this.repos = response?.git
+        this.repositories.push(this.repos)
+        
+
+
 
         resolve ()       
         

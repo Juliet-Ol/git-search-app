@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
+// import { NgProgressModule } from '@ngx-progressbar/core';
+// import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,7 +28,9 @@ import { GitService } from './git-services/git.service';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    // NgProgressModule,
+    // NgProgressHttpClientModule
   ],
   providers: [GitService],
   bootstrap: [AppComponent]
