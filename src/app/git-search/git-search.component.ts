@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 // import { GitSearch } from '../git-search/git-search'
 import { GitService } from '../git-services/git.service';
+import { Git } from '../git-class/git';
+
 
 @Component({
   selector: 'app-git-search',
@@ -11,8 +13,17 @@ import { GitService } from '../git-services/git.service';
 export class GitSearchComponent implements OnInit {
 
   // gitsearch!: GitSearch[];
+  user!: Git
 
-  constructor(gitService:GitService) { 
+  constructor( public gitservices: GitService) { 
+    this.gitservices.getProfile('')
+    //.then(()=>{
+      // console.log(this.user)
+    // })
+      // .subscribe(()=>{
+      //   console.log("hey")
+      // });
+    
     
   }
 
