@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GitSearchComponent } from '../git-search/git-search.component';
 
 @Component({
   selector: 'app-profile',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
+  gitsearch!:GitSearchComponent;
+
   constructor() { }
 
   ngOnInit(): void {
   }
+  
 
 }
