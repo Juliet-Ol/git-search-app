@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Git } from '../git-class/git';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -10,35 +11,52 @@ export class GitService {
  
   link = 'https://api.github.com/users/';
   user!: Git
-  userName:any   
+    
   
 
   constructor(public  http:HttpClient) {
-    this.userName = 'Juliet-Ol'
-    this.user = new Git('','')
+    
+    this.user = new Git('','','','')
+
     
    }
    
 
-    getProfile(){
-      let promise = new Promise((resolve, reject)=>{
-        this.http.get<any>(this.link + this.userName).toPromise().then(
-          response=>{
-            this.user.image = response.avatar_url
-            this.user.name =  response.name
+    getProfile(userName:string){
+      console.log("profile service");
+      
+          let url = `${this.link}${userName}`;
+      
+      let promise = new Promise((resolve, reject) => {
+        fetch(url).then(res => {
+          resolve(res.json());
+          // return res.json();
+        }).catch(e => {
+          reject(e);
+          console.log(e);
+        });
+      });
 
-            resolve(console.log('image and name fetched'))
-          },error => {
-            reject(console.log('name and image not found'))
-          }
-        ) 
-      })
-      return promise
-    }
-
-
+      return promise;
 
     }  
-       
-  
 
+    getRepos(userName:string){
+      console.log("Repo service");
+      
+          let url = `${this.link}${userName}/repos`;
+      
+      let promise = new Promise((resolve, reject) => {
+        fetch(url).then(res => {
+          resolve(res.json());
+          // return res.json();
+        }).catch(e => {
+          reject(e);
+          console.log(e);
+        });
+      });
+
+      return promise;
+
+    }     
+  }
