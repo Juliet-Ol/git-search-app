@@ -1,8 +1,8 @@
-GIT SEARCH APP
+**GIT SEARCH APP**
 
 **By Juliet Agutu Oluoch February 2022**
 
-Application Link 
+Application Link https://juliet-ol.github.io/git-search-app/
 
 **Description and how it works**
 
