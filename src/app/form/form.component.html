@@ -1,6 +1,7 @@
 <div class="container-fluid">
     <h3 class="text">Search a Github public account</h3>
-    <form>
+    <hr>
+    <form (ngSubmit)='submitGit()' #Form='ngForm'>
         <div class="form-group">
             <label for="name">User name</label>
             <input type="text" class="form-control" id="name"  name="name" placeholder="Github username" required>

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GitSearchComponent } from '../git-search/git-search.component';
+import { Git } from '../git-class/git';
+import { GitService } from '../git-services/git.service';
 
 @Component({
   selector: 'app-profile',
@@ -9,11 +11,19 @@ import { GitSearchComponent } from '../git-search/git-search.component';
 export class ProfileComponent implements OnInit {
 
   gitsearch!:GitSearchComponent;
+  user!: Git;
+  data: any;
 
-  constructor() { }
+  constructor(public gitservices: GitService) {}
+
 
   ngOnInit(): void {
+    console.log("hello world");
+    this.gitservices.getProfile().then(data => {
+      this.data =  data;
+    });
   }
   
 
 }
+

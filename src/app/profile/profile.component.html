@@ -1,12 +1,12 @@
-<div class="container container-fluid">
-    <div class="card" id="profile">
-        <img [src]="">
-    </div>
+<div class="card" *ngIf="data">
     <div class="card-body">
-        <h4 username></h4>
-        <p bio></p>
+        <h1>me</h1>
+       <img src="{{data.avatar_url}}" alt="">
+       
     </div>
     <div class="card-footer">
-        
+        <p>{{ data.name }}</p>
+       <p>{{data.username}}</p>
+
     </div>
 </div>

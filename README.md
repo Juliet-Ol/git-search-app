@@ -1,10 +1,10 @@
 GIT SEARCH APP
 
-**By Juliet Agutu Oluoch February 2022
+**By Juliet Agutu Oluoch February 2022**
 
 Application Link 
 
-Description and how it works
+**Description and how it works**
 
 Git Search App is an application where you can search public users and repositories.  The search is done using the github user name which displays a github user and there repositories.
 
@@ -14,11 +14,15 @@ Setup/Installation Requirements Bugs
 
 The repositories are currently not displaying. Contact juliet.oluoch@student.moringaschool.com
 
-Technologies used HTML TypeScript JavaScript CSS
+**Technologies used**
 
-Support and contact details Incase of any issues contact detail juliet.oluoch@student.moringaschool.com
+HTML TypeScript JavaScript CSS
 
-License Copyright
+**Support and contact details**
+
+Incase of any issues contact detail juliet.oluoch@student.moringaschool.com
+
+**License Copyright**
 
 Copyright (c) 2022 Juliet Oluoch
 

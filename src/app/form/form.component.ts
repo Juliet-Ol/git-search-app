@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+
+import { Git } from '../git-class/git';
 
 @Component({
   selector: 'app-form',
@@ -7,6 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormComponent implements OnInit {
   
+    newGit = new Git("","","");
+    @Output() addGit = new EventEmitter<Git>();
+
+    submitGit(){
+      this.newGit.emit(this.newGit)
+    }
 
   constructor() { }
 
