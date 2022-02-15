@@ -8,8 +8,12 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class GitService {
-  [x: string]: any;
-  git!: Git;
+
+  api: string = 'https://api.github.com/users/username/repos';
+  data = [];  
+  git!: Git
+
+
 
   repositories:any[] = [];
   username:string;
@@ -30,10 +34,12 @@ export class GitService {
     interface ApiResponse{
       git:string;
       username:string;
-      apiUrl:any
-      gitApiKey:any
+      apiUrl:any;
+      gitApiKey:any;
+      repositories:any;
     }
-    
+
+    fetch
     let promise = new Promise<void>((resolve, reject) => {
       this.http.get<ApiResponse>(environment.apiUrl+this.username+this.repos).toPromise().then(response=>{
         this.repos = response?.apiUrl
