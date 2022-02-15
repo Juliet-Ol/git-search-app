@@ -1,3 +1,33 @@
+GIT SEARCH APP
+
+**By Juliet Agutu Oluoch February 2022
+
+Application Link 
+
+Description and how it works
+
+Git Search App is an application where you can search public users and repositories.  The search is done using the github user name which displays a github user and there repositories.
+
+A user types a user name, and after pressing the search button it displays the users profile and repositories.
+
+Setup/Installation Requirements Bugs
+
+The repositories are currently not displaying. Contact juliet.oluoch@student.moringaschool.com
+
+Technologies used HTML TypeScript JavaScript CSS
+
+Support and contact details Incase of any issues contact detail juliet.oluoch@student.moringaschool.com
+
+License Copyright
+
+Copyright (c) 2022 Juliet Oluoch
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 # GitSearchApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.3.
